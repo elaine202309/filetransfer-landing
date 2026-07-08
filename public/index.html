@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FileTransfer — Transfer Files Between iPhone & Windows, Like a Chat</title>
+  <meta name="description" content="FileTransfer is an iOS app that lets you transfer files and text between your iPhone and Windows PC. No cable, no PC software — just open a browser and start sharing like a chat." />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📦</text></svg>" />
+</head>
+<body>
+
+  <!-- ═══════════ Navigation ═══════════ -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <span class="nav-logo-icon">📦</span>
+        <span>FileTransfer</span>
+      </a>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <a href="#download" class="nav-cta">Download Free</a>
+      <button class="nav-menu-btn" id="menu-btn" aria-label="Menu">☰</button>
+    </div>
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#features">Features</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="#faq">FAQ</a>
+      <a href="#download" class="mobile-cta">Download Free</a>
+    </div>
+  </nav>
+
+  <!-- ═══════════ Hero ═══════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-glow"></div>
+    <div class="hero-inner">
+      <div class="hero-text">
+        <span class="hero-badge">🆕 Now Available on the App Store</span>
+        <h1 class="hero-title">
+          Transfer files between<br />
+          iPhone & Windows <span class="hero-highlight">like a chat</span>
+        </h1>
+        <p class="hero-desc">
+          No USB cable. No PC software. No typing codes.<br />
+          The app gives you a URL — just open it in your Windows browser,<br />
+          and share files and text as easily as sending a message.
+        </p>
+        <div class="hero-actions">
+          <a href="#download" class="btn-primary btn-lg">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.9,17.39C17.64,16.59 16.89,16 16,16H15V13A1,1 0 0,0 14,12H8V10H10A1,1 0 0,0 11,9V7H13A2,2 0 0,0 15,5V4.59C17.93,5.77 20,8.64 20,12C20,14.08 19.2,15.97 17.9,17.39M11,19.93C7.05,19.44 4,16.08 4,12C4,11.38 4.08,10.78 4.21,10.21L9,15V16A2,2 0 0,0 11,18M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"/></svg>
+            Download on the App Store
+          </a>
+          <a href="#how-it-works" class="btn-outline btn-lg">See how it works →</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><strong>No</strong>USB Cable</div>
+          <div class="stat"><strong>No</strong>PC Software</div>
+          <div class="stat"><strong>No</strong>File Size Limit</div>
+        </div>
+      </div>
+
+      <!-- Device mockups -->
+      <div class="hero-devices">
+        <div class="device-iphone">
+          <div class="device-screen iphone-screen">
+            <div class="mock-chat">
+              <div class="mock-msg mock-sent">Sending you the Q3 report PDF 📄</div>
+              <div class="mock-msg mock-received">Got it! Saved to Files</div>
+              <div class="mock-file">
+                <span class="mock-file-icon">📊</span>
+                <span>Q3_Report.pdf</span>
+                <span class="mock-file-size">2.4 MB</span>
+              </div>
+              <div class="mock-msg mock-sent">And a few photos from the site</div>
+              <div class="mock-photos">
+                <span>🖼</span><span>🖼</span><span>🖼</span>
+              </div>
+            </div>
+            <!-- iPhone chat input -->
+            <div class="mock-iphone-input">
+              <span class="mock-input-plus">+</span>
+              <span class="mock-input-field">Type a message...</span>
+              <span class="mock-input-send">↑</span>
+            </div>
+          </div>
+        </div>
+        <div class="device-windows">
+          <div class="windows-monitor">
+            <div class="monitor-stand"></div>
+            <div class="monitor-screen">
+              <!-- Windows 11 Browser Window -->
+              <div class="win-browser">
+                <div class="win-titlebar">
+                  <div class="win-tab">
+                    <svg width="14" height="14" viewBox="0 0 20 20" fill="#4F46E5"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zM5.5 8h3L8.5 5.5 5.5 8zm1 4l3 2.5V12h3l-.5 2.5 3-3-3-3 .5 2.5h-3l.5-2.5-3 3z"/></svg>
+                    <span>FileTransfer</span>
+                    <span class="win-tab-close">×</span>
+                  </div>
+                  <div class="win-tab win-tab-new">+</div>
+                  <div class="win-controls">
+                    <span>─</span><span>□</span><span>×</span>
+                  </div>
+                </div>
+                <div class="win-toolbar">
+                  <div class="win-nav-btns">
+                    <span>←</span><span>→</span><span>↻</span>
+                  </div>
+                  <div class="win-url-bar">
+                    <span class="win-url-lock">🔒</span>
+                    <span>192.168.1.5:5721</span>
+                  </div>
+                </div>
+                <div class="browser-chat">
+                  <div class="mock-msg mock-received">Sending you the Q3 report PDF 📄</div>
+                  <div class="mock-msg mock-sent">Got it! Saved to Files</div>
+                  <div class="mock-file mock-file-win">
+                    <span class="mock-file-icon">📊</span>
+                    <span>Q3_Report.pdf</span>
+                    <span class="mock-file-size">⬇ Download</span>
+                  </div>
+                </div>
+                <!-- Windows chat input -->
+                <div class="mock-win-input">
+                  <span class="mock-input-clip">📎</span>
+                  <span class="mock-input-field mock-input-field-win">Type a message...</span>
+                  <span class="mock-input-send mock-input-send-win">Send</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Connection animation -->
+        <div class="connection-line">
+          <svg viewBox="0 0 200 60" fill="none">
+            <path d="M10,30 C60,10 140,50 190,30" stroke="url(#lineGrad)" stroke-width="2" stroke-dasharray="8,4" fill="none"/>
+            <defs><linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#4F46E5"/><stop offset="100%" stop-color="#818CF8"/></linearGradient></defs>
+          </svg>
+          <span class="transfer-anim">⚡ Live Transfer</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ How It Works ═══════════ -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="section-header">
+      <span class="section-tag">Get Started in 3 Steps</span>
+      <h2>Stop hunting for that USB cable</h2>
+      <p>Faster than Bluetooth. Easier than cloud storage. Simpler than email.</p>
+    </div>
+
+    <div class="steps">
+      <div class="step-card">
+        <div class="step-number">1</div>
+        <div class="step-icon" style="background:#EEF2FF">📱</div>
+        <h3>Download the App</h3>
+        <p>Install FileTransfer on your iPhone. Open it and you'll see <strong>a unique URL</strong> for your current session.</p>
+        <span class="step-time">⏱ Takes about 10 seconds</span>
+      </div>
+
+      <div class="step-arrow">→</div>
+
+      <div class="step-card">
+        <div class="step-number">2</div>
+        <div class="step-icon" style="background:#FEF3C7">💻</div>
+        <h3>Open in Browser</h3>
+        <p>Type the URL from your iPhone into your Windows browser. <strong>No installation required</strong> — the page loads instantly and connects.</p>
+        <span class="step-time">⏱ Takes about 5 seconds</span>
+      </div>
+
+      <div class="step-arrow">→</div>
+
+      <div class="step-card">
+        <div class="step-number">3</div>
+        <div class="step-icon" style="background:#D1FAE5">✨</div>
+        <h3>Start Transferring</h3>
+        <p>Send text and files like a chat. Files from your PC are <strong>automatically saved to the Files app</strong> on your iPhone.</p>
+        <span class="step-time">🚀 Instant transfer</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ Features ═══════════ -->
+  <section class="features" id="features">
+    <div class="section-header">
+      <span class="section-tag">Features</span>
+      <h2>More powerful than you think</h2>
+      <p>Every feature built for seamless cross-platform file sharing</p>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">💬</div>
+        <h3>Chat-Style Transfer</h3>
+        <p>Send messages and files just like texting. Zero learning curve. Text arrives instantly, files come with previews and one-click downloads.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">📁</div>
+        <h3>Auto-Save to Files</h3>
+        <p>Files sent from PC are automatically saved to the Files app on your iPhone. No manual saving — receive and use immediately.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">🔒</div>
+        <h3>Local Network Transfer</h3>
+        <p>Direct device-to-device transfer over the same WiFi. Your files never pass through third-party servers — fast and private.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">📎</div>
+        <h3>Any File Format</h3>
+        <p>PDF, Word, Excel, images, videos, ZIP archives… every format is supported. No size limits, no quantity caps.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">🖼</div>
+        <h3>Drag & Paste to Send</h3>
+        <p>Drag files directly into the browser window, or Ctrl+V to paste screenshots. Faster than any other method.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">🏠</div>
+        <h3>No PC Software Needed</h3>
+        <p>All you need on Windows is a browser. Chrome, Edge, Firefox — all work. Even on locked-down work computers.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ Comparison ═══════════ -->
+  <section class="comparison" id="comparison">
+    <div class="section-header">
+      <span class="section-tag">Why FileTransfer</span>
+      <h2>How we compare</h2>
+    </div>
+
+    <div class="compare-table-wrapper">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th class="col-our">📦 FileTransfer</th>
+            <th>USB Cable</th>
+            <th>Messaging Apps</th>
+            <th>Cloud Storage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>PC Installation</td>
+            <td class="col-our">✅ None needed</td>
+            <td>✅ None needed</td>
+            <td>❌ Required</td>
+            <td>❌ Required</td>
+          </tr>
+          <tr>
+            <td>Transfer Speed</td>
+            <td class="col-our">⚡ LAN speed</td>
+            <td>🐢 USB speed</td>
+            <td>🐢 Very slow</td>
+            <td>🔶 Depends on plan</td>
+          </tr>
+          <tr>
+            <td>File Size Limit</td>
+            <td class="col-our">✅ Unlimited</td>
+            <td>✅ Unlimited</td>
+            <td>❌ Strict limits</td>
+            <td>🔶 Depends on plan</td>
+          </tr>
+          <tr>
+            <td>Auto-Save to Phone</td>
+            <td class="col-our">✅ Files App</td>
+            <td>🔶 Manual only</td>
+            <td>❌ Manual save</td>
+            <td>❌ Manual download</td>
+          </tr>
+          <tr>
+            <td>Text Messaging</td>
+            <td class="col-our">✅ Chat-style</td>
+            <td>❌ Not supported</td>
+            <td>✅ Supported</td>
+            <td>❌ Not supported</td>
+          </tr>
+          <tr>
+            <td>Privacy</td>
+            <td class="col-our">✅ Local network</td>
+            <td>✅ Local</td>
+            <td>❌ Passes through servers</td>
+            <td>❌ Stored in cloud</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ═══════════ Use Cases ═══════════ -->
+  <section class="usecases" id="usecases">
+    <div class="section-header">
+      <span class="section-tag">Use Cases</span>
+      <h2>When you'll need it</h2>
+    </div>
+
+    <div class="usecases-grid">
+      <div class="usecase-card">
+        <span class="usecase-emoji">💼</span>
+        <h3>Professionals</h3>
+        <p>Send documents from your work PC to your phone in one click. Snap whiteboard photos and beam them straight into your docs.</p>
+      </div>
+      <div class="usecase-card">
+        <span class="usecase-emoji">🎓</span>
+        <h3>Students</h3>
+        <p>Download research papers on a library computer, send them to your phone instantly. Snap handwritten notes and send them back to your PC.</p>
+      </div>
+      <div class="usecase-card">
+        <span class="usecase-emoji">🎨</span>
+        <h3>Creators</h3>
+        <p>Transfer high-res footage from your iPhone to a Windows PC for editing — no quality loss. Send rendered videos back to preview on your phone.</p>
+      </div>
+      <div class="usecase-card">
+        <span class="usecase-emoji">👨‍👩‍👧</span>
+        <h3>Family</h3>
+        <p>Batch-transfer vacation photos from your phone to PC for backup, no iCloud hassle. Share photos with your parents' computer — they just click download.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ CTA Banner ═══════════ -->
+  <section class="cta-banner" id="download">
+    <div class="cta-glow"></div>
+    <div class="cta-content">
+      <h2>Ready to ditch the cable?</h2>
+      <p>Download for free and experience seamless transfer between iPhone and Windows.</p>
+      <div class="cta-buttons">
+        <a href="#" class="btn-appstore">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.74 19.67,18.11 18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.07,3.17 15.6,4.35 14.9,5.19C14.21,6.04 13.07,6.7 11.95,6.61C11.8,5.46 12.36,4.26 13,3.5Z"/></svg>
+          <div>
+            <small>Download on the</small>
+            <strong>App Store</strong>
+          </div>
+        </a>
+        <span class="cta-or">or</span>
+        <div class="cta-qr">
+          <div class="qr-placeholder">📱<br/><small>Scan to download</small></div>
+        </div>
+      </div>
+      <p class="cta-note">Requires iOS 16+ · Free Download · No In-App Purchases</p>
+    </div>
+  </section>
+
+  <!-- ═══════════ FAQ ═══════════ -->
+  <section class="faq" id="faq">
+    <div class="section-header">
+      <span class="section-tag">FAQ</span>
+      <h2>Frequently asked questions</h2>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>Do I really not need to install anything on Windows?</span>
+          <span class="faq-arrow">▾</span>
+        </button>
+        <div class="faq-answer">
+          <p>Absolutely nothing. As long as your Windows PC has a browser — Chrome, Edge, Firefox, or any other — you just open the URL and go. This is one of FileTransfer's biggest advantages: locked-down work computer with no admin rights? No problem. You've always got a browser.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>Do my phone and PC need to be on the same WiFi?</span>
+          <span class="faq-arrow">▾</span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes — FileTransfer works over your local network, so both devices need to be on the same WiFi. This is what makes transfers blazing fast and ensures your files never touch a third-party server. If you're not on the same network, you can always turn on your phone's hotspot and connect your PC to it.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>Where do transferred files go on my iPhone?</span>
+          <span class="faq-arrow">▾</span>
+        </button>
+        <div class="faq-answer">
+          <p>All files sent from your PC are automatically saved into the FileTransfer folder inside the Files app on your iPhone. You can view, preview, and share them right from the Files app, or open them with any other app. No need to manually save each file.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>Are there file size limits? How fast is it?</span>
+          <span class="faq-arrow">▾</span>
+        </button>
+        <div class="faq-answer">
+          <p>No file size limits and no quantity limits whatsoever. Since transfers happen over your local network, speed depends on your WiFi quality — typically 20–80 MB/s. A 1 GB movie transfers in about 15–50 seconds, which is orders of magnitude faster than uploading to cloud storage and downloading again.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>Is it secure? Do my files go through the internet?</span>
+          <span class="faq-arrow">▾</span>
+        </button>
+        <div class="faq-answer">
+          <p>Very secure. FileTransfer uses direct local network connections — your files travel directly between your phone and PC, never uploaded to any cloud server. Each session generates a unique, encrypted URL that only works while your app is open. Your files stay between your own devices.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ Footer ═══════════ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">📦 FileTransfer</span>
+        <p>The simplest, most elegant way<br />to transfer files between iPhone and Windows.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Product</h4>
+          <a href="#features">Features</a>
+          <a href="#how-it-works">How It Works</a>
+          <a href="#download">Download</a>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <a href="#faq">FAQ</a>
+          <a href="/contact.html">Contact Support</a>
+          <a href="/privacy.html">Privacy Policy</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="/terms.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 FileTransfer. All rights reserved. Made with ❤️</p>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
