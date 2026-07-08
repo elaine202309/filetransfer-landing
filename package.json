@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "FileTransfer iOS App 产品推广落地页",
   "scripts": {
-    "start": "npx serve public -l 3000",
-    "dev": "npx serve public -l 3000"
+    "start": "npx serve docs -l 3000",
+    "dev": "npx serve docs -l 3000"
   }
 }
