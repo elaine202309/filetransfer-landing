@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════
-   FileTransfer — 产品推广落地页
+   Transfer Assistant — 产品推广落地页
    设计风格：Apple 式简约 + 现代渐变
    ═══════════════════════════════════════════════ */
 
@@ -1051,20 +1051,12 @@ section {
   font-size: 14px;
 }
 
-.qr-placeholder {
+.qr-code {
   width: 90px; height: 90px;
-  background: rgba(255,255,255,0.12);
-  border-radius: var(--radius);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: rgba(255,255,255,0.8);
-  font-size: 28px;
-  border: 1px dashed rgba(255,255,255,0.2);
+  border-radius: var(--radius-sm);
+  background: #fff;
+  padding: 4px;
 }
-
-.qr-placeholder small { font-size: 10px; margin-top: 4px; }
 
 .cta-note {
   font-size: 13px !important;

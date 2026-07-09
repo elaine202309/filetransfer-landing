@@ -1,5 +1,5 @@
 /**
- * FileTransfer Landing Page — 交互脚本
+ * Transfer Assistant Landing Page — 交互脚本
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -121,5 +121,5 @@ document.addEventListener('DOMContentLoaded', () => {
   // ═══════════ 统计数字递增动画 ═══════════
   // （可后续添加真实数据展示）
 
-  console.log('🚀 FileTransfer Landing Page Ready');
+  console.log('🚀 Transfer Assistant Landing Page Ready');
 });
