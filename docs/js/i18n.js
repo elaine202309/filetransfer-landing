@@ -44,7 +44,8 @@
 
     const wrap = document.createElement('div');
     wrap.className = 'lang-switcher';
-    wrap.innerHTML = '<button class="lang-trigger"><span>' + cur.toUpperCase() + '</span><span class="lang-arrow">▾</span></button><div class="lang-dropdown"></div>';
+    const curLang = LANGS.find(l => l.code === cur);
+    wrap.innerHTML = '<button class="lang-trigger"><span class="globe-icon">🌐</span><span>' + (curLang ? curLang.label : 'English') + '</span><span class="lang-arrow">▾</span></button><div class="lang-dropdown"></div>';
     const dd = wrap.querySelector('.lang-dropdown');
     LANGS.forEach(l => {
       const o = document.createElement('button');
@@ -71,7 +72,10 @@
     apply(code);
     // Update trigger label
     const t = document.querySelector('.lang-trigger span:first-child');
-    if (t) t.textContent = code.toUpperCase();
+    // Keep globe icon, update the text span after it
+    const labelSpan = document.querySelector('.lang-trigger span:nth-child(2)');
+    const lang = LANGS.find(l => l.code === code);
+    if (labelSpan && lang) labelSpan.textContent = lang.label;
     document.querySelectorAll('.lang-option').forEach(o => o.classList.toggle('active', o.dataset.lang === code));
     document.querySelector('.lang-switcher').classList.remove('open');
   }
