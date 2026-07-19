@@ -137,6 +137,71 @@ img { max-width: 100%; display: block; }
   box-shadow: 0 4px 12px rgba(79,70,229,0.3);
 }
 
+/* ── 语言切换器 ──────────────────────────────── */
+.lang-switcher {
+  position: relative;
+  margin-left: 12px;
+}
+
+.lang-trigger {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 10px;
+  background: var(--bg-gray);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: var(--font);
+  color: var(--text-2);
+  transition: all 0.2s;
+}
+
+.lang-trigger:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.lang-arrow {
+  font-size: 10px;
+  color: var(--text-muted);
+}
+
+.lang-dropdown {
+  display: none;
+  position: absolute;
+  top: calc(100% + 4px);
+  right: 0;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-lg);
+  z-index: 200;
+  min-width: 130px;
+  overflow: hidden;
+}
+
+.lang-switcher.open .lang-dropdown { display: block; }
+
+.lang-option {
+  display: block;
+  width: 100%;
+  padding: 10px 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: var(--font);
+  color: var(--text-2);
+  text-align: left;
+  transition: background 0.15s;
+}
+
+.lang-option:hover { background: var(--bg-gray); }
+.lang-option.active { color: var(--primary); font-weight: 700; background: var(--primary-light); }
+
 /* 移动端菜单按钮 */
 .nav-menu-btn {
   display: none;

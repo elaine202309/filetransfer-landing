@@ -7,160 +7,73 @@
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📦</text></svg>" />
   <style>
-    body {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
-    .static-page {
-      flex: 1;
-      max-width: 680px;
-      width: 100%;
-      margin: 0 auto;
-      padding: calc(var(--nav-height) + 60px) 24px 60px;
-    }
-    .static-page h1 {
-      font-size: 36px;
-      font-weight: 800;
-      letter-spacing: -1px;
-      margin-bottom: 12px;
-    }
-    .static-page .subtitle {
-      color: var(--text-3);
-      font-size: 17px;
-      margin-bottom: 44px;
-      line-height: 1.6;
-    }
-    .contact-methods {
-      display: grid;
-      gap: 20px;
-    }
-    .contact-card {
-      display: flex;
-      align-items: flex-start;
-      gap: 16px;
-      padding: 24px;
-      background: var(--bg);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      transition: all 0.2s;
-    }
-    .contact-card:hover {
-      border-color: var(--primary);
-      box-shadow: var(--shadow-glow);
-    }
-    .contact-icon {
-      width: 48px; height: 48px;
-      border-radius: var(--radius);
-      background: var(--primary-light);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 24px;
-      flex-shrink: 0;
-    }
-    .contact-info h3 {
-      font-size: 18px;
-      font-weight: 700;
-      margin-bottom: 4px;
-    }
-    .contact-info p, .contact-info a {
-      font-size: 15px;
-      color: var(--text-3);
-      line-height: 1.5;
-    }
-    .contact-info a {
-      color: var(--primary);
-      text-decoration: none;
-      font-weight: 500;
-    }
+    body { min-height: 100vh; display: flex; flex-direction: column; }
+    .static-page { flex: 1; max-width: 680px; width: 100%; margin: 0 auto; padding: calc(var(--nav-height) + 60px) 24px 60px; }
+    .static-page h1 { font-size: 36px; font-weight: 800; letter-spacing: -1px; margin-bottom: 12px; }
+    .static-page .subtitle { color: var(--text-3); font-size: 17px; margin-bottom: 44px; line-height: 1.6; }
+    .contact-methods { display: grid; gap: 20px; }
+    .contact-card { display: flex; align-items: flex-start; gap: 16px; padding: 24px; background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius-lg); transition: all 0.2s; }
+    .contact-card:hover { border-color: var(--primary); box-shadow: var(--shadow-glow); }
+    .contact-icon { width: 48px; height: 48px; border-radius: var(--radius); background: var(--primary-light); display: flex; align-items: center; justify-content: center; font-size: 24px; flex-shrink: 0; }
+    .contact-info h3 { font-size: 18px; font-weight: 700; margin-bottom: 4px; }
+    .contact-info p, .contact-info a { font-size: 15px; color: var(--text-3); line-height: 1.5; }
+    .contact-info a { color: var(--primary); text-decoration: none; font-weight: 500; }
     .contact-info a:hover { text-decoration: underline; }
-    .response-time {
-      font-size: 13px;
-      color: var(--text-muted);
-      margin-top: 8px;
-    }
+    .response-time { font-size: 13px; color: var(--text-muted); margin-top: 8px; }
   </style>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZBK5QJJ80"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-4ZBK5QJJ80');
-  </script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-4ZBK5QJJ80');</script>
 </head>
 <body>
-
   <nav class="nav scrolled" id="nav">
     <div class="nav-inner">
-      <a href="index.html" class="nav-logo">
-        <span class="nav-logo-icon">📦</span>
-        <span>Transfer Assistant</span>
-      </a>
+      <a href="index.html" class="nav-logo"><span class="nav-logo-icon">📦</span><span>Transfer Assistant</span></a>
       <div class="nav-links">
-        <a href="index.html#features">Features</a>
-        <a href="index.html#how-it-works">How It Works</a>
-        <a href="index.html#faq">FAQ</a>
+        <a href="index.html#features" data-i18n="navFeatures">Features</a>
+        <a href="index.html#how-it-works" data-i18n="navHowItWorks">How It Works</a>
+        <a href="index.html#faq" data-i18n="navFAQ">FAQ</a>
       </div>
-      <a href="index.html#download" class="nav-cta">Download Free</a>
+      <a href="https://apps.apple.com/us/app/transfer-assistant/id6788221033" target="_blank" class="nav-cta" data-i18n="navDownload">Download Free</a>
     </div>
   </nav>
 
   <main class="static-page">
-    <h1>Contact Support</h1>
-    <p class="subtitle">We're here to help. Reach out and we'll get back to you as soon as possible.</p>
-
+    <h1 data-i18n="ctTitle">Contact Support</h1>
+    <p class="subtitle" data-i18n="ctSub">We're here to help. Reach out and we'll get back to you as soon as possible.</p>
     <div class="contact-methods">
       <div class="contact-card">
         <div class="contact-icon">📧</div>
         <div class="contact-info">
-          <h3>Email</h3>
-          <p><a href="mailto:support@filetransfer.app">support@filetransfer.app</a></p>
-          <p>For general inquiries, bug reports, and feature requests.</p>
-          <p class="response-time">Usually respond within 24 hours</p>
+          <h3 data-i18n="ctEmail">Email</h3>
+          <p><a href="mailto:support@filetransfer.app" data-i18n="ctEmailAddr">support@filetransfer.app</a></p>
+          <p data-i18n="ctEmailDesc">For general inquiries, bug reports, and feature requests.</p>
+          <p class="response-time" data-i18n="ctEmailTime">Usually respond within 24 hours</p>
         </div>
       </div>
-
       <div class="contact-card">
         <div class="contact-icon">💬</div>
         <div class="contact-info">
-          <h3>In-App Feedback</h3>
-          <p>Open Transfer Assistant on your iPhone, go to <strong>Settings → Send Feedback</strong> to message us directly from the app.</p>
-          <p class="response-time">Usually respond within 48 hours</p>
+          <h3 data-i18n="ctInApp">In-App Feedback</h3>
+          <p data-i18n="ctInAppDesc">Open Transfer Assistant on your iPhone, go to <strong>Settings → Send Feedback</strong> to message us directly from the app.</p>
+          <p class="response-time" data-i18n="ctInAppTime">Usually respond within 48 hours</p>
         </div>
       </div>
-
     </div>
   </main>
 
   <footer class="footer">
     <div class="footer-inner">
-      <div class="footer-brand">
-        <span class="footer-logo">📦 Transfer Assistant</span>
-        <p>The simplest, most elegant way<br />to transfer files between iPhone and Windows.</p>
-      </div>
+      <div class="footer-brand"><span class="footer-logo">📦 Transfer Assistant</span><p data-i18n="ftTagline">The simplest, most elegant way<br>to transfer files between iPhone and Windows.</p></div>
       <div class="footer-links">
-        <div class="footer-col">
-          <h4>Product</h4>
-          <a href="index.html#features">Features</a>
-          <a href="index.html#how-it-works">How It Works</a>
-          <a href="index.html#download">Download</a>
-        </div>
-        <div class="footer-col">
-          <h4>Support</h4>
-          <a href="index.html#faq">FAQ</a>
-          <a href="contact.html">Contact Support</a>
-          <a href="privacy.html">Privacy Policy</a>
-        </div>
-        <div class="footer-col">
-          <h4>Legal</h4>
-          <a href="terms.html">Terms of Service</a>
-        </div>
+        <div class="footer-col"><h4 data-i18n="ftProd">Product</h4><a href="index.html#features" data-i18n="ftFeat">Features</a><a href="index.html#how-it-works" data-i18n="ftHow">How It Works</a><a href="index.html#download" data-i18n="ftDown">Download</a></div>
+        <div class="footer-col"><h4 data-i18n="ftSupport">Support</h4><a href="index.html#faq" data-i18n="ftFAQ">FAQ</a><a href="contact.html" data-i18n="ftContact">Contact Support</a><a href="privacy.html" data-i18n="ftPrivacy">Privacy Policy</a></div>
+        <div class="footer-col"><h4 data-i18n="ftLegal">Legal</h4><a href="terms.html" data-i18n="ftTerms">Terms of Service</a></div>
       </div>
     </div>
-    <div class="footer-bottom">
-      <p>© 2026 Transfer Assistant. All rights reserved. Made with ❤️</p>
-    </div>
+    <div class="footer-bottom"><p data-i18n="ftCopy">© 2026 Transfer Assistant. All rights reserved.</p></div>
   </footer>
+
+  <script src="js/translations.js"></script>
+  <script src="js/i18n.js"></script>
 </body>
 </html>
