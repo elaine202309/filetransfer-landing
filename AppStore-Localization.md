@@ -2,13 +2,66 @@
 # App Store Connect 提交用
 
 # ═══════════════════════════════════════════════════════════════
+# English (en)
+# ═══════════════════════════════════════════════════════════════
+
+[en]
+
+promotional_text:
+Free 7-day trial! Fast wireless transfer between iPhone and PC. No USB cable, no PC software. Share files, photos, and text over WiFi.
+
+description:
+Transfer Assistant | Wireless Transfer Between iPhone ↔ PC
+Tired of tangled USB cables, slow cloud uploads, and messenger file-size limits? Designed for cross-platform transfer between iPhone and PC, Transfer Assistant needs no installation on your PC. Transfer documents, photos, 4K videos, archives, and text at high speed through any browser, over a secure, fast peer-to-peer connection on your local network.
+
+3 Simple Steps to Instant Connection
+1. Install and open the app on your iPhone to generate a unique access link
+2. Open any browser (Chrome, Edge, Firefox) on your PC, enter the link, and connect in 1 second
+3. Share files, photos, and text like a chat. All files from your PC are saved automatically to a dedicated folder — no manual saving
+
+Key Features
+· No PC software required: Works perfectly in any browser, even on locked-down office computers without admin rights
+· No file size or quantity limits: Transfer 1 GB HD videos, oversized archives, and more without restrictions
+· Private local network transfer: Peer-to-peer transfer with no third-party cloud server. Encrypted sessions fully protect your privacy
+· Chat-style interaction: Drag & drop files, paste screenshots, and send text in real time — zero learning curve
+· Automatic file organization: All transferred files are automatically sorted into a dedicated folder with one-click preview, share, and export
+· Full format compatibility: Supports PDF, Word, Excel, images, 4K videos, ZIP archives, and all major formats
+· Blazing-fast LAN speed: Transfer speeds up to 20–80 MB/s — a 1 GB video in tens of seconds, far faster than Bluetooth, cloud, and messaging apps
+
+Use Cases
+· Professionals: Send reports, whiteboard photos, and documents across devices for effortless mobile work
+· Students: Transfer papers and handwritten notes both ways — no more USB drives
+· Creators: Move original HD footage from iPhone to PC for lossless editing, then preview finished work on your phone
+· Family: Batch-backup photos without an iCloud subscription, with one-click download on family computers
+
+Why Choose Transfer Assistant
+Compared to USB cables, Bluetooth, messaging apps, and cloud storage, our tool needs no PC installation, has no file size limits, supports automatic organization and two-way text transfer, and uses local encryption — combining convenience, speed, and security.
+
+FAQ
+· Do I really need no software on the PC?
+That's right. Any standard browser works, including locked-down office devices without admin rights.
+· Do iPhone and PC need to be on the same WiFi?
+The same WiFi gives the best speed. You can also turn on your phone's hotspot if there's no shared network.
+· Where do transferred files go?
+All files are automatically stored in a dedicated Transfer Assistant folder in the Files app, ready to preview and share.
+· Is the transfer secure?
+All transfers are peer-to-peer with no cloud upload. Every session is independently encrypted and invalidated on close, preventing data leaks.
+
+Privacy Policy: https://transfer.mxcode.com/privacy.html
+Terms of Use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+
+keywords:
+file,share,send,wireless,Windows,PC,chat,text,photo,video,document,cross-platform,local
+
+
+# ═══════════════════════════════════════════════════════════════
 # 简体中文 (Simplified Chinese - zh-Hans)
 # ═══════════════════════════════════════════════════════════════
 
 [zh-Hans]
 
 promotional_text:
-iPhone 与 PC 之间高速无线传输文件。无需数据线、无需电脑软件、不限文件大小！WiFi 直连，畅快分享文件、图片与文字。
+免费试用 7 天！iPhone 与 PC 高速无线传输，无需数据线、无需电脑软件。WiFi 直连，畅快分享文件、图片与文字。
 
 description:
 Transfer Assistant｜iPhone ↔ PC 跨设备无线传输
@@ -61,7 +114,7 @@ keywords:
 [de]
 
 promotional_text:
-WLAN-Dateiübertragung zwischen iPhone und PC. Kein USB-Kabel, keine Software, kein Dateilimit! Dateien, Bilder und Texte teilen.
+7 Tage kostenlos testen! Schnelle WLAN-Übertragung zwischen iPhone und PC. Kein USB-Kabel, keine Software. Dateien, Bilder und Texte teilen.
 
 description:
 Transfer Assistant｜iPhone ↔ PC Drahtlose Dateiübertragung
@@ -114,7 +167,7 @@ Datei,teilen,senden,kabellos,Windows,PC,Chat,Text,Foto,Video,Dokument,netzwerkü
 [it]
 
 promotional_text:
-Trasferimento wireless veloce tra iPhone e PC. Niente cavi, niente software, nessun limite! Connettiti via WiFi e condividi file, immagini e testi.
+7 giorni di prova gratis! Trasferimento wireless veloce tra iPhone e PC. Niente cavi, niente software. Condividi file, immagini e testi.
 
 description:
 Transfer Assistant｜Trasferimento Wireless iPhone ↔ PC
@@ -167,7 +220,7 @@ file,condividere,inviare,wireless,Windows,PC,chat,testo,foto,video,documento,mul
 [fr]
 
 promotional_text:
-Transfert sans fil ultra-rapide entre iPhone et PC. Zéro câble, zéro logiciel, zéro limite ! Connectez-vous en WiFi et partagez fichiers, images et textes.
+7 jours d'essai gratuit ! Transfert sans fil ultra-rapide entre iPhone et PC. Zéro câble, zéro logiciel. Partagez fichiers, images et textes.
 
 description:
 Transfer Assistant｜Transfert Sans Fil iPhone ↔ PC
@@ -220,7 +273,7 @@ fichier,partager,envoyer,sans fil,Windows,PC,discussion,texte,photo,vidéo,docum
 [es]
 
 promotional_text:
-Transferencia inalámbrica veloz entre iPhone y PC. ¡Sin cables, sin software, sin límites! Conéctate por WiFi y comparte archivos, imágenes y texto.
+¡7 días de prueba gratis! Transferencia inalámbrica veloz entre iPhone y PC. Sin cables, sin software. Comparte archivos, imágenes y texto.
 
 description:
 Transfer Assistant｜Transferencia Inalámbrica iPhone ↔ PC
